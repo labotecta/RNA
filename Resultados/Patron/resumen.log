@@ -1,0 +1,49 @@
+Muestra de entrenamiento. dígitos 0 :   5,923 dígitos del 1 al 9:  54,077 total  60,000
+Muestra de prueba.        dígitos 0 :     980 dígitos del 1 al 9:   9,020 total  10,000
+
+-----------
+Métrica ECM
+-----------
+
+Distancia mínima       508.2       0.648 por punto
+Distancia máxima       720.4       0.919 por punto
+
+Punto de corte     561.209       0.716
+
+Resultados para la muestra de prueba
+
+Falsos positivos   (dígitos del 1 al 9 confundidos con 0)          :     205  2.3%
+Falsos negativos   (dígitos 0 no reconocidos)                      :     150 15.3%
+Aciertos positivos (dígitos 0 reconocidos como tal -sensibilidad-) :     830 84.7%
+Aciertos negativos (dígitos 1 al 9 reconocidos como no 0)          :   8,815 97.7%
+Aciertos totales                                                   :   9,645 96.5%
+
+
+-----------
+Métrica CC
+-----------
+
+Distancia mínima         4.7       0.006 por punto
+Distancia máxima       110.9       0.142 por punto
+
+Punto de corte      47.202       0.060
+
+Resultados para la muestra de prueba
+
+Falsos positivos   (dígitos del 1 al 9 confundidos con 0)          :     219  2.4%
+Falsos negativos   (dígitos 0 no reconocidos)                      :     175 17.9%
+Aciertos positivos (dígitos 0 reconocidos como tal -sensibilidad-) :     805 82.1%
+Aciertos negativos (dígitos 1 al 9 reconocidos como no 0)          :   8,801 97.6%
+Aciertos totales                                                   :   9,606 96.1%
+
+
+Dibujar un cero
+
+Métrica ECM
+Proceso de ajuste: [Dimensión 784] 133 puntos más y 1 puntos menos. Puntos totales 133
+NO se alcanzó el objetivo de [   280.605] tras 50,000 intentos MC
+distancia                        519.222
+Métrica CC
+Proceso de ajuste: [Dimensión 784] 301 puntos más y 1 puntos menos. Puntos totales 301
+NO se alcanzó el objetivo de [   141.606] tras 50,000 intentos MC
+distancia                        130.876

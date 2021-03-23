@@ -1,0 +1,83 @@
+Model: "sequential"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+flatten (Flatten)            (None, 4096)              0         
+_________________________________________________________________
+dense (Dense)                (None, 2)                 8194      
+_________________________________________________________________
+dense_1 (Dense)              (None, 1)                 3         
+=================================================================
+Total params: 8,197
+Trainable params: 8,197
+Non-trainable params: 0
+_________________________________________________________________
+Muestra de entrenamiento F:/Articulos/IA/Datos/formas_train_6000_64x64 con 6,000 observaciones
+
+Sesgos         0.1285 -0.1304
+
+Pesos  capa 2
+ -0.1351
+ -0.1351
+
+
+Resultados para la muestra de prueba F:/Articulos/IA/Datos/formas_test_30000_64x64 con 30,000 observaciones
+
+Error   0.22705543041229248
+Acierto 0.6666666865348816
+
+Círculos  :  10,000 resto de formas   :  20,000 total  30,000
+
+Falsos positivos   (formas confundidas con Círculos   sin serlo)   :       0  0.0%
+Falsos negativos   (Círculos   no reconocidos)                     :  10,000 100.0%
+Aciertos positivos (Círculos   reconocidos como tal -sensibilidad-):       0  0.0%
+Aciertos negativos ("no Círculos  " reconocido que no lo son)      :  20,000 100.0%
+Aciertos totales                                                   :  20,000 66.7%
+
+
+Resultados para la muestra de prueba F:/Articulos/IA/Datos/formas_sorpresa_30000_64x64 con 30,000 observaciones
+
+Error   0.35860806703567505
+Acierto 0.0
+
+Círculos  :  30,000 resto de formas   :       0 total  30,000
+
+Falsos positivos   (formas confundidas con Círculos   sin serlo)   :       0  0.0%
+Falsos negativos   (Círculos   no reconocidos)                     :  30,000 100.0%
+Aciertos positivos (Círculos   reconocidos como tal -sensibilidad-):       0  0.0%
+Aciertos negativos ("no Círculos  " reconocido que no lo son)      :       0  0.0%
+Aciertos totales                                                   :       0  0.0%
+
+
+Dibujar Círculos  
+
+Número de imagenes a crear del referente      3
+
+  Sorteos P.iniciales     Corte % Margen
+--------- ----------- --------- -------- ---------------------------------------------------------------
+Inicio          [ 0.43188]
+MC                0.43188
+Ajuste -          0.43188
+Ajuste + final    0.45663
+Proceso de ajuste: [Dimensión 4,096] 230 puntos más y 0 puntos menos. Puntos totales 230
+    5,000           0   0.99999        4 NO se alcanzó el objetivo de     99.999% tras 5,000 intentos MC
+                                         certeza                          45.663%
+--------- ----------- --------- -------- ---------------------------------------------------------------
+Inicio          [ 0.43188]
+MC                0.43188
+Ajuste -          0.43188
+Ajuste + final    0.45663
+Proceso de ajuste: [Dimensión 4,096] 230 puntos más y 0 puntos menos. Puntos totales 230
+    5,000           0   0.99999        4 NO se alcanzó el objetivo de     99.999% tras 5,000 intentos MC
+                                         certeza                          45.663%
+--------- ----------- --------- -------- ---------------------------------------------------------------
+Inicio          [ 0.43188]
+MC                0.43188
+Ajuste -          0.43188
+Ajuste + final    0.45663
+Proceso de ajuste: [Dimensión 4,096] 230 puntos más y 0 puntos menos. Puntos totales 230
+    5,000           0   0.99999        4 NO se alcanzó el objetivo de     99.999% tras 5,000 intentos MC
+                                         certeza                          45.663%
+--------- ----------- --------- -------- ---------------------------------------------------------------
+
+

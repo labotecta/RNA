@@ -1,0 +1,73 @@
+Model: "sequential"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+flatten (Flatten)            (None, 4096)              0         
+_________________________________________________________________
+dense (Dense)                (None, 1)                 4097      
+=================================================================
+Total params: 4,097
+Trainable params: 4,097
+Non-trainable params: 0
+_________________________________________________________________
+Muestra de entrenamiento F:/Articulos/IA/Datos/formas_train_6000_64x64 con 6,000 observaciones
+
+Sesgo          0.0376
+
+Resultados para la muestra de prueba F:/Articulos/IA/Datos/formas_test_30000_64x64 con 30,000 observaciones
+
+Error   0.17617246508598328
+Acierto 0.7070000171661377
+
+Triangulos:  10,000 resto de formas   :  20,000 total  30,000
+
+Falsos positivos   (formas confundidas con Triangulos sin serlo)   :   3,992 20.0%
+Falsos negativos   (Triangulos no reconocidos)                     :   4,798 48.0%
+Aciertos positivos (Triangulos reconocidos como tal -sensibilidad-):   5,202 52.0%
+Aciertos negativos ("no Triangulos" reconocido que no lo son)      :  16,008 80.0%
+Aciertos totales                                                   :  21,210 70.7%
+
+
+Resultados para la muestra de prueba F:/Articulos/IA/Datos/formas_sorpresa_30000_64x64 con 30,000 observaciones
+
+Error   0.006729149259626865
+Acierto 0.9999666810035706
+
+Triangulos:       0 resto de formas   :  30,000 total  30,000
+
+Falsos positivos   (formas confundidas con Triangulos sin serlo)   :       1  0.0%
+Falsos negativos   (Triangulos no reconocidos)                     :       0  0.0%
+Aciertos positivos (Triangulos reconocidos como tal -sensibilidad-):       0  0.0%
+Aciertos negativos ("no Triangulos" reconocido que no lo son)      :  29,999 100.0%
+Aciertos totales                                                   :  29,999 100.0%
+
+
+Dibujar Triangulos
+
+Número de imagenes a crear del referente      3
+
+  Sorteos P.iniciales     Corte % Margen
+--------- ----------- --------- -------- ---------------------------------------------------------------
+Inicio          [ 0.50939]
+MC                0.99999
+Ajuste -          0.99999
+Proceso de ajuste: [Dimensión 4,096] 0 puntos más y 75 puntos menos. Puntos totales 763
+    5,000           0   0.99999        4 Alcanzado objetivo de       [    99.999%] tras 2,613 intentos MC
+                                         certeza                          99.999%
+--------- ----------- --------- -------- ---------------------------------------------------------------
+Inicio          [ 0.50939]
+MC                0.99999
+Ajuste -          0.99999
+Proceso de ajuste: [Dimensión 4,096] 0 puntos más y 89 puntos menos. Puntos totales 742
+    5,000           0   0.99999        4 Alcanzado objetivo de       [    99.999%] tras 2,345 intentos MC
+                                         certeza                          99.999%
+--------- ----------- --------- -------- ---------------------------------------------------------------
+Inicio          [ 0.50939]
+MC                0.99999
+Ajuste -          0.99999
+Proceso de ajuste: [Dimensión 4,096] 0 puntos más y 62 puntos menos. Puntos totales 726
+    5,000           0   0.99999        4 Alcanzado objetivo de       [    99.999%] tras 2,239 intentos MC
+                                         certeza                          99.999%
+--------- ----------- --------- -------- ---------------------------------------------------------------
+
+

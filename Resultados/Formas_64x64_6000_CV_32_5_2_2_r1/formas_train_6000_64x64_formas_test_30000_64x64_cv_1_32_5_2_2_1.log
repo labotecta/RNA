@@ -1,0 +1,78 @@
+Model: "sequential"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+conv2d (Conv2D)              (None, 60, 60, 32)        832       
+_________________________________________________________________
+max_pooling2d (MaxPooling2D) (None, 30, 30, 32)        0         
+_________________________________________________________________
+flatten (Flatten)            (None, 28800)             0         
+_________________________________________________________________
+dense (Dense)                (None, 2)                 57602     
+=================================================================
+Total params: 58,434
+Trainable params: 58,434
+Non-trainable params: 0
+_________________________________________________________________
+Muestra de entrenamiento F:/Articulos/IA/Datos/formas_train_6000_64x64 con 6,000 observaciones
+
+Resultados para la muestra de prueba F:/Articulos/IA/Datos/formas_test_30000_64x64 con 30,000 observaciones
+
+Error   0.16715563833713531
+Acierto 0.9436666369438171
+
+Cuadrados :  10,000 resto de formas   :  20,000 total  30,000
+
+Falsos positivos   (formas confundidas con Cuadrados  sin serlo)   :     734  3.7%
+Falsos negativos   (Cuadrados  no reconocidos)                     :     956  9.6%
+Aciertos positivos (Cuadrados  reconocidos como tal -sensibilidad-):   9,044 90.4%
+Aciertos negativos ("no Cuadrados " reconocido que no lo son)      :  19,266 96.3%
+Aciertos totales                                                   :  28,310 94.4%
+
+
+Resultados para la muestra de prueba F:/Articulos/IA/Datos/formas_sorpresa_30000_64x64 con 30,000 observaciones
+
+Error   0.002618334721773863
+Acierto 0.9999333620071411
+
+Cuadrados :       0 resto de formas   :  30,000 total  30,000
+
+Falsos positivos   (formas confundidas con Cuadrados  sin serlo)   :       2  0.0%
+Falsos negativos   (Cuadrados  no reconocidos)                     :       0  0.0%
+Aciertos positivos (Cuadrados  reconocidos como tal -sensibilidad-):       0  0.0%
+Aciertos negativos ("no Cuadrados " reconocido que no lo son)      :  29,998 100.0%
+Aciertos totales                                                   :  29,998 100.0%
+
+
+Dibujar Cuadrados 
+
+Número de imagenes a crear del referente      3
+
+  Sorteos P.iniciales     Corte % Margen
+--------- ----------- --------- -------- ---------------------------------------------------------------
+Inicio   0.01694 [ 0.98306]
+MC                0.98306
+Ajuste -          0.98306
+Ajuste + final    0.99926
+Proceso de ajuste: [Dimensión 4,096] 17 puntos más y 0 puntos menos. Puntos totales 17
+    5,000           0   0.99999        4 NO se alcanzó el objetivo de     99.999% tras 5,000 intentos MC
+                                         certeza                          99.926%
+--------- ----------- --------- -------- ---------------------------------------------------------------
+Inicio   0.01694 [ 0.98306]
+MC                0.98306
+Ajuste -          0.98306
+Ajuste + final    0.99926
+Proceso de ajuste: [Dimensión 4,096] 17 puntos más y 0 puntos menos. Puntos totales 17
+    5,000           0   0.99999        4 NO se alcanzó el objetivo de     99.999% tras 5,000 intentos MC
+                                         certeza                          99.926%
+--------- ----------- --------- -------- ---------------------------------------------------------------
+Inicio   0.01694 [ 0.98306]
+MC                0.98306
+Ajuste -          0.98306
+Ajuste + final    0.99926
+Proceso de ajuste: [Dimensión 4,096] 17 puntos más y 0 puntos menos. Puntos totales 17
+    5,000           0   0.99999        4 NO se alcanzó el objetivo de     99.999% tras 5,000 intentos MC
+                                         certeza                          99.926%
+--------- ----------- --------- -------- ---------------------------------------------------------------
+
+

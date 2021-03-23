@@ -1,0 +1,83 @@
+Model: "sequential"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+flatten (Flatten)            (None, 4096)              0         
+_________________________________________________________________
+dense (Dense)                (None, 2)                 8194      
+_________________________________________________________________
+dense_1 (Dense)              (None, 1)                 3         
+=================================================================
+Total params: 8,197
+Trainable params: 8,197
+Non-trainable params: 0
+_________________________________________________________________
+Muestra de entrenamiento F:/Articulos/IA/Datos/formas_train_6000_64x64 con 6,000 observaciones
+
+Sesgos        -1.8106  0.6332
+
+Pesos  capa 2
+ -1.4559
+ -1.4559
+
+
+Resultados para la muestra de prueba F:/Articulos/IA/Datos/formas_test_30000_64x64 con 30,000 observaciones
+
+Error   0.17715905606746674
+Acierto 0.7218666672706604
+
+Triangulos:  10,000 resto de formas   :  20,000 total  30,000
+
+Falsos positivos   (formas confundidas con Triangulos sin serlo)   :   4,713 23.6%
+Falsos negativos   (Triangulos no reconocidos)                     :   3,631 36.3%
+Aciertos positivos (Triangulos reconocidos como tal -sensibilidad-):   6,369 63.7%
+Aciertos negativos ("no Triangulos" reconocido que no lo son)      :  15,287 76.4%
+Aciertos totales                                                   :  21,656 72.2%
+
+
+Resultados para la muestra de prueba F:/Articulos/IA/Datos/formas_sorpresa_30000_64x64 con 30,000 observaciones
+
+Error   0.012661747634410858
+Acierto 0.9941333532333374
+
+Triangulos:       0 resto de formas   :  30,000 total  30,000
+
+Falsos positivos   (formas confundidas con Triangulos sin serlo)   :     176  0.6%
+Falsos negativos   (Triangulos no reconocidos)                     :       0  0.0%
+Aciertos positivos (Triangulos reconocidos como tal -sensibilidad-):       0  0.0%
+Aciertos negativos ("no Triangulos" reconocido que no lo son)      :  29,824 99.4%
+Aciertos totales                                                   :  29,824 99.4%
+
+
+Dibujar Triangulos
+
+Número de imagenes a crear del referente      3
+
+  Sorteos P.iniciales     Corte % Margen
+--------- ----------- --------- -------- ---------------------------------------------------------------
+Inicio          [ 0.55574]
+MC                0.65320
+Ajuste -          0.65320
+Ajuste + final    0.65320
+Proceso de ajuste: [Dimensión 4,096] 0 puntos más y 25 puntos menos. Puntos totales 133
+    5,000           0   0.99999        4 NO se alcanzó el objetivo de     99.999% tras 5,000 intentos MC
+                                         certeza                          65.320%
+--------- ----------- --------- -------- ---------------------------------------------------------------
+Inicio          [ 0.55574]
+MC                0.65320
+Ajuste -          0.65320
+Ajuste + final    0.65320
+Proceso de ajuste: [Dimensión 4,096] 0 puntos más y 33 puntos menos. Puntos totales 133
+    5,000           0   0.99999        4 NO se alcanzó el objetivo de     99.999% tras 5,000 intentos MC
+                                         certeza                          65.320%
+--------- ----------- --------- -------- ---------------------------------------------------------------
+Inicio          [ 0.55574]
+MC                0.65320
+Ajuste -          0.65320
+Ajuste + final    0.65320
+Proceso de ajuste: [Dimensión 4,096] 0 puntos más y 38 puntos menos. Puntos totales 139
+    5,000           0   0.99999        4 NO se alcanzó el objetivo de     99.999% tras 5,000 intentos MC
+                                         certeza                          65.320%
+--------- ----------- --------- -------- ---------------------------------------------------------------
+
+
