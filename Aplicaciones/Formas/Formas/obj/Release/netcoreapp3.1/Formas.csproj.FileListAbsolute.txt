@@ -1,0 +1,15 @@
+C:\Articulos\IA\Formas\Formas\bin\Release\netcoreapp3.1\Formas.exe
+C:\Articulos\IA\Formas\Formas\bin\Release\netcoreapp3.1\Formas.deps.json
+C:\Articulos\IA\Formas\Formas\bin\Release\netcoreapp3.1\Formas.runtimeconfig.json
+C:\Articulos\IA\Formas\Formas\bin\Release\netcoreapp3.1\Formas.runtimeconfig.dev.json
+C:\Articulos\IA\Formas\Formas\bin\Release\netcoreapp3.1\Formas.dll
+C:\Articulos\IA\Formas\Formas\bin\Release\netcoreapp3.1\Formas.pdb
+C:\Articulos\IA\Formas\Formas\obj\Release\netcoreapp3.1\Formas.Form1.resources
+C:\Articulos\IA\Formas\Formas\obj\Release\netcoreapp3.1\Formas.csproj.GenerateResource.cache
+C:\Articulos\IA\Formas\Formas\obj\Release\netcoreapp3.1\Formas.AssemblyInfoInputs.cache
+C:\Articulos\IA\Formas\Formas\obj\Release\netcoreapp3.1\Formas.AssemblyInfo.cs
+C:\Articulos\IA\Formas\Formas\obj\Release\netcoreapp3.1\Formas.csproj.CoreCompileInputs.cache
+C:\Articulos\IA\Formas\Formas\obj\Release\netcoreapp3.1\Formas.dll
+C:\Articulos\IA\Formas\Formas\obj\Release\netcoreapp3.1\Formas.pdb
+C:\Articulos\IA\Formas\Formas\obj\Release\netcoreapp3.1\Formas.genruntimeconfig.cache
+C:\Articulos\IA\Formas\Formas\obj\Release\netcoreapp3.1\Formas.csprojAssemblyReference.cache
